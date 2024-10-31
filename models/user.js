@@ -1,15 +1,15 @@
 const mongoose = require("mongoose");
 
 const adventureSchema = new mongoose.Schema({
-    destination: {
-        type: String,
-        required: true,
-    },
-    memories: {
-        type: String,
-        required: true,
-    },
-  });
+  destination: {
+    type: String,
+    required: true,
+  },
+  memories: {
+    type: String,
+    required: true,
+  },
+});
   
 
 const userSchema = new mongoose.Schema({

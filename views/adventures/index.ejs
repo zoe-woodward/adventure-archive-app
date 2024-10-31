@@ -11,7 +11,11 @@
   <a href="/users/<%=user._id%>/adventures/new">Add an Adventure</a>
   <ul>
     <% adventures.forEach((adventure)=>{ %>
-      <li><%= adventure.destination %></li>
+     <li>
+        <a href="/users/<%= user._id %>/adventures/<%= adventure._id %>">
+            <%= adventure.destination %>
+        </a>
+     </li>
     <% }) %>
   </ul>
 </body>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editing <%= adventure.destination %></title>
+</head>
+<body>
+    <%- include('../partials/_navbar.ejs') %>
+    <h1>Editing your <%= adventure.destination %> adventure </h1>
+    <form 
+      action="/users/<%= user._id %>/adventures/<%= adventure._id %>?_method=PUT"
+      method="POST"
+    >
+       <label for="destination">Destination:</label>
+       <input type="text" name="destination" id="destination" value="<%= adventure.destination %>"
+       >
+       <label for="memories">Memories:</label>
+       <textarea name="memories" id="memories"><%= adventure.memories %></textarea>
+       <button type="submit"> Update Adventure</button>
+    </form>
+</body>
+</html>
