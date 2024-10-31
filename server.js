@@ -11,6 +11,7 @@ const authController = require("./controllers/auth.js");
 
 const isSignedIn = require('./middleware/is-signed-in.js');
 const passUserToView = require('./middleware/pass-user-to-view.js');
+const usersController = require('./controllers/users.js');
 
 const adventuresController = require('./controllers/adventures.js');
 
@@ -24,7 +25,6 @@ mongoose.connection.on("connected", () => {
 
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
-// app.use(morgan('dev'));
 
 app.use(
     session({
@@ -47,6 +47,7 @@ app.get('/', (req, res) => {
 app.use('/auth', authController);
 app.use(isSignedIn);
 app.use('/users/:userId/adventures', adventuresController);
+app.use('/users', usersController); 
 
 
 app.listen(port, () => {
