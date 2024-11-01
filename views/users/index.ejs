@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>Find Inspiration!</title>
 </head>
 <body>
     <%- include('../partials/_navbar.ejs') %>
-    <h1>Find Inspiration for that next trip!</h1>
+    <h1>Find Inspiration For That Next Trip!</h1>
+    
     <% if (users.length > 0) { %>
         <ul>
             <% users.forEach(user => { %>
-                    <li>
-                        <a href="/users/<%= user._id %>"><%= user.username %></a>
-                    </li>
+                <li>
+                    <a class="user" href="/users/<%= user._id %>"><%= user.username %></a>
+                </li>
             <% }) %>
         </ul>
     <% } else { %>
-        <p>Looks like you're the first to share your adventures! Spread the word and get your friends to join in!.</p>
+        <p>Looks like you're the first to share your adventures! Spread the word and get your friends to join in!</p>
     <% } %>
+</body>
 </html>

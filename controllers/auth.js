@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
+const session = require('express-session');
 
 const User = require('../models/user.js');
 
@@ -55,6 +56,7 @@ router.post('/sign-in', async (req, res) => {
       username: userInDatabase.username,
       _id: userInDatabase._id
     };
+    req.session.userId = userInDatabase._id;
     res.redirect('/');
   } catch (error) {
     console.log(error);

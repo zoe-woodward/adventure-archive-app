@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+body {
+    font-family: 'Caveat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+  }
+
+
+.index-body {
+    background-image: url('../assets/background.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    color: white;
+  }
+     
+.main-header {
+    font-weight: bold;
+    color:  #ce4866;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
+    font-size: 6.6em;
+    margin: -160px 20px 0 20px;
+  }
+
+.subheader {
+    color:  #ce4866;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
+    font-size: 4em;
+    margin: 0 20px 0 20px;
+  }
+     
+     
+.index-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+     
+.auth-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 80px 0 0;
+    height: 100%;
+  }
+     
+.signup-link,
+.signin-link {
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 8px 0;
+    border-radius: 25px;
+    width: 10em;
+    text-align: center;
+  }
+     
+.signup-link {
+    background-color: #ce4866;
+    color: white;
+    margin: 0 0 20px 0;
+  }
+     
+.signup-link:hover {
+    background-color: #ff5378;
+  }
+     
+.signin-link {
+    background-color: #f6e7e7;
+    color: #1c2e5b;
+    margin: 20px 0 0 0;
+  }
+     
+.signin-link:hover {
+    background-color: #ffffff;
+  }
+  
+
+.signin-container,
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #e0d7d9;
+}
+   
+h1 {
+  color:  #ce4866;
+  font-size: 4em;
+  text-align: center;
+}
+label {
+    color:  #ce4866;
+    font-size: 3em;
+}
+   
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20em;
+  height: 50%;
+  padding: 30px 40px 20px 40px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+   
+input {
+  border: 1px solid rgb(182, 182, 182);
+  padding: 8px;
+  border-radius: 10px;
+}
+   
+button {
+  padding: 10px;
+  background-color: #ce4866;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  margin: 15px 0;
+  font-size: 1.1em;
+}
+#memories {
+    width: 100%; 
+    height: 200px; 
+    resize: vertical;
+    padding: 10px; 
+    box-sizing: border-box; 
+  }
+
+.submit {
+  font-family: 'Caveat', sans-serif;
+  font-size: 1.5em;
+}
+
+.submit:hover { 
+    cursor: pointer;
+    background-color: #ff5378;
+    
+}
+
+.all-adv-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+     
+.all-adv-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 90%;
+  }
+     
+.add {
+    background-color:  #ce4866;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 8px 10px;
+    border-radius: 30px;
+    width: 10em;
+    text-align: center;
+    margin: 30px;
+    font-family: 'Caveat', sans-serif;
+    }
+         
+.add:hover {
+    background-color: #ff5378;
+    cursor: pointer;
+      }
+
+.destination {
+    font-size: 2em;
+    font-family: 'Caveat', sans-serif;
+    color: #ce4866;
+}
+
+ul {
+    list-style: none;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+     
+  ul > a {
+    text-decoration: none;
+    color: #47c997;
+    width: 50%;
+    background-color: #f6e7e7;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 15px 0;
+    font-weight: bold;
+    text-align: center;
+  }
+     
+  ul > a:hover {
+    background-color: #4b598e;
+    color: white;
+  }
+
+
+.new-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+     
+.new-body > form,
+.edit-body > form {
+    height: 70%;
+  }
+     
+textarea,
+select {
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 10px;
+    padding: 10px;
+  }
+     
+select {
+margin-bottom: 10px;
+  }
+     
+.edit-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+.user { 
+    font-size: 2em;
+    font-family: 'Caveat', sans-serif;
+    color: #ce4866;
+}
+
+.user-info {
+    font-size: 2em;
+    font-family: 'Caveat', sans-serif;
+    color: #ce4866;
+
+}
+
+.adv-list li {
+    padding: 10px 0px 25px 0px; 
+    border-bottom: 1px solid #e0e0e0; 
+}
+
+.adv-list li:last-child {
+    border-bottom: none; 
+}

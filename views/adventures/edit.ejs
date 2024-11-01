@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css" />
   <title>Editing <%= adventure.destination %></title>
 </head>
 <body>
     <%- include('../partials/_navbar.ejs') %>
+    <div class="edit-body">
     <h1>Editing your <%= adventure.destination %> adventure </h1>
     <form 
       action="/users/<%= user._id %>/adventures/<%= adventure._id %>?_method=PUT"
@@ -17,7 +19,8 @@
        >
        <label for="memories">Memories:</label>
        <textarea name="memories" id="memories"><%= adventure.memories %></textarea>
-       <button type="submit"> Update Adventure</button>
+       <button class = "submit" type="submit"> Update Adventure</button>
     </form>
+  </div>
 </body>
 </html>

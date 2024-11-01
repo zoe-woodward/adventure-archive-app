@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title><%= user.username %>'s Adventures</title>
 </head>
 <body>
     <%- include('../partials/_navbar.ejs') %>
     <h1><%= user.username %>'s Adventures</h1>
-    <% if (user.adventures.length > 0) { %>
-        <ul>
-            <% user.adventures.forEach(adventure => { %>
-                <li>
-                   <%= adventure.destination %>
-                   <%= adventure.memories%>
-                </li>
-            <% }) %>
-        </ul>
-    <% } else { %>
-        <p>This user hasn't yet embarked on their first adventure. Check back soon!</p>
-    <% } %>
+    <div class="user-info">
+        <% if (user.adventures.length > 0) { %>
+            <ul class="adv-list">
+                <% user.adventures.forEach(adventure => { %>
+                    <li>
+                        <strong><%= adventure.destination %>:</strong>
+                        <%= adventure.memories %>
+                    </li>
+                <% }) %>
+            </ul>
+        <% } else { %>
+            <p>This user hasn't yet embarked on their first adventure. Check back soon!</p>
+        <% } %>
+    </div>
 </body>
 </html>

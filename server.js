@@ -17,20 +17,24 @@ const adventuresController = require('./controllers/adventures.js');
 
 const port = process.env.PORT ? process.env.PORT : "3000";
 
+const path = require('path');
 
 mongoose.connect(process.env.MONGODB_URI);
 mongoose.connection.on("connected", () => {
   console.log(`Connected to MongoDB ${mongoose.connection.name}.`);
 });
 
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(
     session({
       secret: process.env.SESSION_SECRET,
       resave: false,
       saveUninitialized: true,
+      cookie: { secure: false }
     })
   );
 

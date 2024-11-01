@@ -5,7 +5,9 @@ const User = require('../models/user.js');
 router.get('/', async (req, res) => {
   try {
     const users = await User.find();
-    res.render('users/index.ejs', { users });
+    const currentUserId = req.session.userId; 
+    const filteredUsers = users.filter(user => user._id.toString() !== currentUserId);
+    res.render('users/index.ejs', { users: filteredUsers });
   } catch (error) {
     console.error(error);
     res.redirect('/'); 

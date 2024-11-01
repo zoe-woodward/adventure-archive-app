@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+   
+.show-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+   
+.show-header {
+  font-family: 'Caveat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+   
+.show-header > h1 {
+  color: #ce4866;
+  font-size: 4em;
+}
+   
+.show-actions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 0 30px;
+}
+   
+button {
+  padding: 8px 10px;
+  background-color: #ce4866;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.5em;
+  font-family: 'Caveat', sans-serif;
+  width: 10em;
+  margin: 5px;
+}
+   
+button:hover {
+  background-color: #e84a6c;
+}
+   
+.show-actions > a {
+  background-color: #ce4866;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 8px 10px;
+  border-radius: 30px;
+  width: 10em;
+  text-align: center;
+  margin: 5px;
+  font-family: 'Caveat', sans-serif;
+}
+   
+.show-actions > a:hover {
+  background-color: #e84a6c
+}
+   
+p {
+  color: #ce4866;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin: 10px 30px;
+  text-align: center;
+}
+   
+   
+.show-memories {
+  background-color: #f6e7e7;
+  width: 85%;
+  border-radius: 20px;
+  padding: 20px 20px 20px 20px;
+  margin: 20px 10px;
+}
+   
+   
+.show-memories > p {
+  font-weight: normal;
+  color: #1c2e5b;
+  text-align: left;
+  font-size: 2em;
+}

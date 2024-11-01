@@ -3,20 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css" />
   <title>Your Adventures</title>
 </head>
 <body>
   <%- include('../partials/_navbar.ejs') %> 
-  <h1>Your Adventures</h1>
+  <div class="all-adv-body">
+    <div class="all-adv-header">
+      <h1>Your Adventures</h1>
+    </div>
   <ul>
     <% adventures.forEach((adventure)=>{ %>
      <li>
-        <a href="/users/<%= user._id %>/adventures/<%= adventure._id %>">
+        <a class="destination" href="/users/<%= user._id %>/adventures/<%= adventure._id %>">
             <%= adventure.destination %>
         </a>
      </li>
     <% }) %>
   </ul>
-  <a href="/users/<%=user._id%>/adventures/new">Add an Adventure</a>
+  <a class="add" href="/users/<%=user._id%>/adventures/new">Add an Adventure</a>
+</div>
 </body>
 </html>

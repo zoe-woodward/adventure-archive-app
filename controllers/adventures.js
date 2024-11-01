@@ -86,5 +86,4 @@ router.put('/:adventureId', async (req, res) => {
 });
 
 
-
 module.exports = router;

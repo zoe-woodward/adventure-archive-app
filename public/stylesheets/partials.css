@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+    padding: 5px 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6e7e7;
+}
+     
+#nav-header {
+    font-family: 'Caveat', sans-serif;
+    color: #ce4866;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
+    font-size: 3em
+}
+     
+.authlink {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #ce4866;
+    font-weight: bold;
+    font-family: 'Caveat', sans-serif;
+    font-size: 2em
+}
+     
+.authlink:hover {
+    color: white;
+}
+  
