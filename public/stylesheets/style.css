@@ -281,4 +281,8 @@ margin-bottom: 10px;
       font-size: 3em;  
       margin: -80px 10px 0 10px; 
   }
+  .sub-header {
+    font-size: 2em;  
+    margin: -80px 10px 0 10px; 
+  }
 }
