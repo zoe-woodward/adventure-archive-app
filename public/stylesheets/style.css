@@ -275,3 +275,10 @@ margin-bottom: 10px;
 .adv-list li:last-child {
     border-bottom: none; 
 }
+
+@media (max-width: 768px) {
+  .main-header {
+      font-size: 3em;  
+      margin: -80px 10px 0 10px; 
+  }
+}
